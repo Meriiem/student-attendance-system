@@ -12,6 +12,7 @@ class CourseRegistrationDetails
           where crg.student_id=sd.id and 
           crg.session_id=:sessionid and 
           crg.course_id=:courseid";
+
         $s = $dbo->conn->prepare($c);
         try {
             $s->execute([":sessionid" => $sessionid, ":courseid" => $courseid]);
