@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  transition: background-color 0.5s ease-in-out;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+.page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "session"
+    "classlist"
+    "classdetails"
+    "studentlist";
+  gap: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header-area {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fffbe7;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.session-area {
+  grid-area: session;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fffbe7;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.classlist-area {
+  grid-area: classlist;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.classcard {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffcc80;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.classcard:hover {
+  transform: scale(1.1);
+}
+
+.classdetails-area {
+  grid-area: classdetails;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.studentlist-area {
+  grid-area: studentlist;
+  padding: 10px;
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.studentdetails {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #e8f5e9;
+  border-radius: 5px;
+}
+
+.btnlogout {
+  padding: 5px 10px;
+  background-color: #ffcc80;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btnlogout:hover {
+  background-color: #ffb74d;
+}
+
+.ddlclass {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #e8f5e9;
+  border: 1px solid #cccccc;
+}
+
+@media (min-width: 768px) {
+  .page {
+    grid-template-areas:
+      "header header"
+      "session classlist"
+      "classdetails studentlist";
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .classlist-area,
+  .studentlist-area {
+    padding: 20px;
+  }
+}

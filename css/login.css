@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.loginform {
+  width: min(450px, 95%);
+  padding: 20px;
+  background-color: #fffbe7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.loginform:hover {
+  transform: scale(1.02);
+}
+
+.inputgroup {
+  margin-bottom: 24px;
+  position: relative;
+  width: 85%;
+}
+
+.inputgroup input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #eaeaea;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.inputgroup input:focus {
+  border-color: #ffcc80;
+}
+
+.inputgroup label {
+  position: absolute;
+  left: 10px;
+  top: -8px;
+  background: #fffbe7;
+  padding: 0 4px;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.inputgroup input:focus + label {
+  color: #ffb74d;
+}
+
+.btnlogin {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcc80;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnlogin:hover {
+  background-color: #ffb74d;
+}
+
+.diverror {
+  background-color: #ffcc80;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  width: 85%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: none;
+}
+
+.lockscreen {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #cccccc;
+  border-radius: 50%;
+  border-top-color: #ffb74d;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.lblwait {
+  margin-top: 10px;
+  color: #333;
+}
+
+.diverror {
+  background-color: #ffcccc;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  width: 85%;
+  text-align: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-20px);
+  opacity: 0;
+  display: block;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}
+
+.applyerrordiv {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* .header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #666;
+} */
