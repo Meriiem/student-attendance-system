@@ -35,8 +35,8 @@ function tryLogin() {
 $(function (e) {
   $(document).on("keyup", "input", function (e) {
     $("#diverror").removeClass("applyerrordiv");
-    let un = $("#txtUsername").val();
     let pw = $("#txtPassword").val();
+    let un = $("#txtUsername").val();
     if (un.trim() !== "" && pw.trim() !== "") {
       $("#btnLogin").removeClass("inactivecolor");
       $("#btnLogin").addClass("activecolor");
