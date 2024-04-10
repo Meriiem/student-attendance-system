@@ -3,8 +3,8 @@ $path = $_SERVER['DOCUMENT_ROOT'];
 require_once $path . "/student-attendance-management-system/database/database.php";
 require_once $path . "/student-attendance-management-system/database/sessionDetails.php";
 require_once $path . "/student-attendance-management-system/database/facultyDetails.php";
-require_once $path . "/student-attendance-management-system/database/courseRegistrationDetails.php";
 require_once $path . "/student-attendance-management-system/database/attendanceDetails.php";
+require_once $path . "/student-attendance-management-system/database/courseRegistrationDetails.php";
 function createCSVReport($list, $filename)
 {
     $error = 0;
