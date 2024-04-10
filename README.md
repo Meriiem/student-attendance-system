@@ -25,3 +25,15 @@ Before running the project, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/meriiem/student-attendance-system.git
+
+2. Navigate to the XAMPP installation directory and locate the 'htdocs' folder.
+3. Inside 'htdocs', create a new folder for the project and copy the contents of the cloned repository into it.
+4. Start XAMPP and ensure both Apache and MySQL services are running.
+5. Open a web browser and go to localhost/phpmyadmin to create a new database for the application.
+6. Adjust the database.php configuration to match your database settings.
+
+### Running the Application
+
+1. Open your web browser.
+2. Navigate to localhost/student-attendance-management-system/login.php to access the login page.
+3. Login with the faculty credentials provided.
