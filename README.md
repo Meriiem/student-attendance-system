@@ -2,7 +2,7 @@
 
 This repository contains the source code for a web-based student attendance management system. Designed with simplicity and functionality, this application facilitates the monitoring of student attendance by educators and can download the attendance report in a CSV format.
 
-[![Watch the video](http://img.youtube.com/vi/sxtmWlmf_S4/0.jpg)](http://www.youtube.com/watch?v=sxtmWlmf_S4)
+![Alt text](assets/vid.mp4)
 
 ## Tech Stack
 
